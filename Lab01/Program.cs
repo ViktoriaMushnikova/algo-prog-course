@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 
 Console.WriteLine("Hello, World!");
 string myName = "Виктория Мушникова";
@@ -101,6 +103,7 @@ Console.WriteLine($"Цена без НДС: {productPrice}, С НДС ({VatRate}
 
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("ВИЗИТНАЯ КАРТОЧКА СТУДЕНТА");
+//Использование константы, чтобы переменную нельзя было изменить
 const string Name = "Мушникова Виктория Андреевна";
 string group = "ИСП-251";
 int course = 2;
@@ -110,29 +113,13 @@ bool ctipendia = true;
 int work1 = 5;
 int work2 = 4;
 int work3 = 5;
-double work = (work1 + work2 + work3) / 3;
+// Получаем наш средний балл через складывания оценок и деление на их количество(3.0 потому что нам нужно получить число с плавающей точкой)
+double work = (work1 + work2 + work3) / 3.0;
 
 
+//Использование интерполяции строк для вставки переменных в текст сообщение
 
-
-Console.WriteLine($"ФИО: {Name}");
-Console.WriteLine($"Группа: {group}");
-Console.WriteLine($"Курс: {course}");
-Console.WriteLine($"Специальность: {spesial}");
-
-Console.WriteLine($"Средний балл за 3 работы: {work}");
-Console.WriteLine($"Стипендия положена (>= 4.0): {ctipendia}");
-
-Console.WriteLine($"Учебных недель осталось в семестре: {isb}");
-
-
-
-
-
-
-
-
-
+ 
 
 
 
