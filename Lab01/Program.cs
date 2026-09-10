@@ -119,7 +119,41 @@ double work = (work1 + work2 + work3) / 3.0;
 
 //Использование интерполяции строк для вставки переменных в текст сообщение
 
- 
+ Console.WriteLine($"ФИО: {Name}");
+Console.WriteLine($"Группа: {group}");
+Console.WriteLine($"Курс: {course}");
+Console.WriteLine($"Специальность: {spesial}");
+
+Console.WriteLine($"Средний балл за 3 работы: {work}");
+Console.WriteLine($"Стипендия положена (>= 4.0): {ctipendia}");
+
+Console.WriteLine($"Учебных недель осталось в семестре: {isb}");
+
+Console.WriteLine("Финансовый мини-расчёт");
+int scholarship = 5369;
+int monthlyExpenses = 4565;
+
+int scholarshipmonthlyExpenses = scholarship - monthlyExpenses;
+const int MonthsInSemester = 4;
+int insemester = MonthsInSemester * scholarshipmonthlyExpenses;
+Console.WriteLine($"Остаётся к концу месяца: {scholarshipmonthlyExpenses} руб.");
+Console.WriteLine($"Составит за весь семестр: {insemester} руб.");
+
+Console.WriteLine("Конвертер температур");
+double celsius = 24.5;
+const double K = 273.15;
+double F = celsius * 9 / 5 + 32;
+double K1 = celsius + K;
+Console.WriteLine($"{celsius}°C={F}°F={K1}K");
+
+Console.WriteLine("Найди и исправь ошибку");
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+
+int Lesson = totalMinutes / minutesPerLesson;
+int ostatok = totalMinutes % minutesPerLesson;
+Console.WriteLine($"{totalMinutes} минут = {Lesson} полных занятий + {ostatok} минут.");
+
 
 
 
