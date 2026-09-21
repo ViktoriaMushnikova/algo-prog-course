@@ -82,7 +82,7 @@ Console.WriteLine($"Все три строки равны: {fullNameConcat == fu
 Console.WriteLine();
 Console.WriteLine("Константы");
 
-const double VatRate = 0.18;
+const double VatRate = 0.20;
 const string CollegeName = "ВФ ВолГУ";
 
 double productPrice = 1000;
